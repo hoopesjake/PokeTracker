@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PokeTracker.Controllers
 {
-    public class HomeController : Controller
+    public class CalculatorController : Controller
     {
         public IActionResult Index()
         {

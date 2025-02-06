@@ -1,8 +1,161 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Pokémon Cards Collection";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<head>
+    <!-- Favicon for the Page -->
+    <link rel="icon" type="image/png" href="~/images/pokeball-transparent-png-2.png">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .navbar h2 {
+            color: white;
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        .navbar img {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            background-color: #007bff;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Page Container */
+        .container {
+            margin: 20px auto;
+            width: 80%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px gray;
+            text-align: center;
+        }
+
+        /* Card Styling */
+        .card-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card-item {
+            text-align: center;
+            max-width: 300px;
+            padding: 10px;
+            background: #f1f1f1;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-item img {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+        }
+
+        .card-description {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: lightgray;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+    <img src="~/images/pokeball-transparent-png-2.png" alt="Pokémon Icon">
+    <h2>Pokémon Cards Collection</h2>
+    <a href="/Calculator">Go to Calculator</a>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+    <h1>Welcome to My Pokémon Cards Collection</h1>
+    <p>Explore my favorite Pokémon cards, their values, and more!</p>
+
+    <div class="card-gallery">
+        <!-- Mewtwo VSTAR -->
+        <div class="card-item">
+            <img src="~/images/mewtwoVSTAR.jpeg" alt="Mewtwo VSTAR card">
+            <p class="card-description">
+                <strong>Mewtwo VSTAR</strong> - <em>Crown Zenith</em><br>
+                Raw: $122.94 | PSA 10: $298.04
+            </p>
+        </div>
+
+        <!-- Altaria EX -->
+        <div class="card-item">
+            <img src="~/images/altariaEX.jpeg" alt="Altaria EX Card">
+            <p class="card-description">
+                <strong>Altaria EX</strong> - <em>Paradox Rift</em><br>
+                Raw: $58.15 | PSA 10: $172.96
+            </p>
+        </div>
+
+        <!-- Pikachu -->
+        <div class="card-item">
+            <img src="~/images/pikachu.jpeg" alt="Pikachu Card">
+            <p class="card-description">
+                <strong>Pikachu</strong><br>
+                Raw: $34.85 | PSA 10: $176.98
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- Hobby Description -->
+    <div class="hobby-description">
+        
+        <h2>My Story</h2>
+        <p>
+            I started collecting and playing Pokémon when I was about 7 or 8 years old. It was always an exciting experience opening packs, trading cards, and playing the game. Over the years, my interest in Pokémon never completely faded, but recently, it has become even more special.
+        </p>
+
+        <p>
+            My little brother, who is 12, and my dad have recently gotten really into it as well. Now, we all collect together, opening packs and hunting for chase cards. It has become more than just a hobby; it's something that has brought my dad, my brother, and me closer together. We share the excitement of every pull, every rare find, and every new set release.
+        </p>
+
+        <p>
+            We actively keep tabs on local card stores to see where we can find packs, and we try to catch restocks in Pokémon vending machines and major retailers. Pokémon is currently at an all-time high in popularity, and it has been an incredible experience collecting and spending quality time with my family.
+        </p>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2025 Pokémon Cards App | Built by Jake Hoopes</p>
+    </footer>
 </div>
